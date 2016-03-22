@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\R-TypeClient\src\WinSocket.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\APlayer.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\ASocket.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\Bonus.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\ClientInfo.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\Ennemy.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\Game.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\main.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\Missile.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\Object.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\Player.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\Select.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\Server.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\ServerSend.cpp" />
+    <ClCompile Include="..\..\..\R-TypeServer\src\WinThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\R-TypeServer\inc\APlayer.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\ASocket.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\Bonus.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\ClientInfo.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\CString.hpp" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\Ennemy.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\Game.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\IThread.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\Missile.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\Object.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\Player.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\ProtocolOpcodes.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\Select.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\Server.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\ServerSend.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\stdafx.h" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\WinSocket.hh" />
+    <ClInclude Include="..\..\..\R-TypeServer\inc\WinThread.hh" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A569D531-F528-4857-B7E8-95602AA7A383}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RType</RootNamespace>
+    <ProjectName>R-TypeServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\..\..\R-TypeServer\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\..\..\R-TypeServer\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile />
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
